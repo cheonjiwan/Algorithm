@@ -1,16 +1,12 @@
-import sys, copy
-from collections import deque
+import sys
+
+# sys.setrecursionlimit(10 ** 8)  # 10^8 까지 늘림.
 
 
-def move(myMap, direction, paramMax):
+def move(myMap, direction):
     global size, merge
-    global visited
-
-    maxValue = paramMax
-    # movedMap = copy.deepcopy(copyMap)
-    # movedMap = [[0] * size for _ in range(size)]
-    movedMap = []
-    row = deque()
+    global maxValue
+    movedMap = [[0 for col in range(size)] for row in range(size)]
 
     if direction == 0:  # left
         for i in range(size):
@@ -18,94 +14,64 @@ def move(myMap, direction, paramMax):
             j = 0
             while j < size:
                 if myMap[i][j] != 0:
-                    if index != 0 and myMap[i][j] == row[index - 1] and merge == False:
-                        row[index - 1] *= 2
-                        maxValue = max(maxValue, row[index - 1])
+                    if (
+                        index != 0
+                        and myMap[i][j] == movedMap[i][index - 1]
+                        and merge == False
+                    ):
+                        movedMap[i][index - 1] *= 2
+                        maxValue = max(maxValue, movedMap[i][index - 1])
                         merge = True
                     else:
-                        row.append(myMap[i][j])
-                        # movedMap[i].append(myMap[i][j])
-                        # new_c[i].append(myMap[i][j])
-                        # movedMap[i][index] = myMap[i][j]
+                        movedMap[i][index] = myMap[i][j]
                         index += 1
                         merge = False
 
                 j += 1
-
             merge = False
-            for x in range(index,size):
-                row.append(0)
-            movedMap.append(list(row))
-            row = deque()
 
     elif direction == 1:  # down
-        for p in range(size):
-            movedMap.append([])
-
         for i in range(size):
-            count=0
-            index = 0
+            index = size - 1
             j = size - 1
             while j >= 0:
                 if myMap[j][i] != 0:
                     if (
-                        index != 0
-                        and myMap[j][i] == row[index]
+                        index != size - 1
+                        and myMap[j][i] == movedMap[index + 1][i]
                         and merge == False
                     ):
-                        row[index] *= 2
-                        maxValue = max(maxValue, row[index])
+                        movedMap[index + 1][i] *= 2
+                        maxValue = max(maxValue, movedMap[index + 1][i])
                         merge = True
                     else:
-                        row.appendleft(myMap[j][i])
-                        count+=1
-                        #movedMap[index][i] = myMap[j][i]
+                        movedMap[index][i] = myMap[j][i]
                         index -= 1
                         merge = False
                 j -= 1
             merge = False
-            for x in range(count,size):
-                row.appendleft(0)
-            for x in range(size):
-                movedMap[x].append(row.popleft())
-                
-            row = deque()
-
     elif direction == 2:  # right
         for i in range(size):
-            count=0
-            index = 0
+            index = size - 1
             j = size - 1
             while j >= 0:
                 if myMap[i][j] != 0:
                     if (
-                        index != 0
-                        and myMap[i][j] == row[index]
+                        index != size - 1
+                        and myMap[i][j] == movedMap[i][index + 1]
                         and merge == False
                     ):
-                        row[index] *= 2
-                        maxValue = max(maxValue, row[index])
+                        movedMap[i][index + 1] *= 2
+                        maxValue = max(maxValue, movedMap[i][index + 1])
                         merge = True
                     else:
-                        row.appendleft(myMap[i][j])
-                        count+=1
-                        # movedMap[i].append(myMap[i][j])
-                        # movedMap[i][index] = myMap[i][j]
+                        movedMap[i][index] = myMap[i][j]
                         index -= 1
                         merge = False
 
                 j -= 1
-
             merge = False
-            for x in range(count,size):
-                row.appendleft(0)
-            movedMap.append(list(row))
-            row = deque()
-
     elif direction == 3:  # up
-        for x in range(size):
-            movedMap.append([])
-
         for i in range(size):
             index = 0
             j = 0
@@ -113,26 +79,20 @@ def move(myMap, direction, paramMax):
                 if myMap[j][i] != 0:
                     if (
                         index != 0
-                        and myMap[j][i] == row[index-1]
+                        and myMap[j][i] == movedMap[index - 1][i]
                         and merge == False
                     ):
-                        row[index - 1] *= 2
-                        maxValue = max(maxValue, row[index - 1])
+                        movedMap[index - 1][i] *= 2
+                        maxValue = max(maxValue, movedMap[index - 1][i])
                         merge = True
                     else:
-                        row.append(myMap[j][i])
+                        movedMap[index][i] = myMap[j][i]
                         index += 1
                         merge = False
                 j += 1
             merge = False
-            for x in range(index,size):
-                row.append(0)
-            for x in range(size):
-                movedMap[x].append(row.popleft())
-                
-            row = deque()
 
-    return movedMap, maxValue
+    return movedMap
 
 
 def checkMap(myMap, returnMap):
@@ -144,38 +104,44 @@ def checkMap(myMap, returnMap):
 
 
 def dfs(myMap, depth):
-    global flag
+    global max_v
     if depth == 5:
         return
+    if (maxValue == max_v):
+        print(maxValue)
+        sys.exit()
 
     for i in range(4):
-        returnMap, returnMaxValue = move(myMap, i, visited[depth])
+        returnMap = move(myMap, i)
         # merge = False
-        # flag = checkMap(myMap, returnMap)
-        if visited[depth + 1] <= returnMaxValue:
-            visited[depth + 1] = returnMaxValue
-            flag = checkMap(myMap, returnMap)
-
+        flag = checkMap(myMap, returnMap)
         if flag == False:
             dfs(returnMap, depth + 1)
 
 
-inputMaxValue = 0
+maxValue = 0
+flag = 0
 size = int(sys.stdin.readline())
 myMap = []
 merge = False
-flag = False
-visited = [0] * 11
+total=0
 for i in range(size):
     myMap.append(list(map(int, sys.stdin.readline().split())))
-    inputMaxValue = max(inputMaxValue, max(myMap[i]))
+    if maxValue < max(myMap[i]):
+        maxValue = max(myMap[i])
+    for c in range(size):
+        tmp = myMap[i][c]
+        if tmp!=0:
+            total+=tmp
 
-visited[0] = inputMaxValue
+max_v = 0
+while total != 1:
+    total//=2
+    max_v *=2
+
 # 0:left, 1:down, 2:right, 3:up
 
+# myMap = move(myMap, 1)
+# print(myMap)
 dfs(myMap, 0)
-print(max(visited))
-
-#myMap,maxvalue=move(myMap,1,0)
-#myMap=move(myMap,2,0)
-#print(myMap)
+print(maxValue)
