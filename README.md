@@ -21,6 +21,7 @@
   [문자열 재정렬](https://github.com/cheonjiwan/Algorithm/blob/master/%EA%B5%AC%ED%98%84/%EB%AC%B8%EC%9E%90%EC%97%B4%EC%9E%AC%EC%A0%95%EB%A0%AC.py)
   [문자열 압축](https://github.com/cheonjiwan/Algorithm/blob/master/%EA%B5%AC%ED%98%84/%EB%AC%B8%EC%9E%90%EC%97%B4%EC%95%95%EC%B6%95.py)
   [자물쇠와 열쇠](https://github.com/cheonjiwan/Algorithm/blob/master/%EA%B5%AC%ED%98%84/%EC%9E%90%EB%AC%BC%EC%87%A0%EC%99%80%EC%97%B4%EC%87%A0.py)
+  [뱀](https://github.com/cheonjiwan/Algorithm/blob/master/%EA%B5%AC%ED%98%84/%EB%B1%80.py)
 
 ### \* DFS,BFS
 
