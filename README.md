@@ -31,14 +31,17 @@
 > DFS
 
 - 깊이 우선 탐색 알고리즘
-- 최대한 멀리 있는 노드를 우선으로 탐색하는 방식으로 동작, 스택 자료구조 이용
-  > BFS
+- 최대한 멀리 있는 노드를 우선으로 탐색하는 방식으로 동작, 스택 자료구조 이용<br>
+
+> BFS
+
 - 너비 우선 탐색 알고리즘
 - 선입선출 방식의 큐를 이용하면 효과적으로 구현<br><br>
-  [특정 거리의 도시 찾기](https://github.com/cheonjiwan/Algorithm/blob/master/DFS_BFS/%ED%8A%B9%EC%A0%95%EA%B1%B0%EB%A6%AC%EC%9D%98%EB%8F%84%EC%8B%9C%EC%B0%BE%EA%B8%B0.py)
-  [연구소](https://github.com/cheonjiwan/Algorithm/blob/master/DFS_BFS/%EC%97%B0%EA%B5%AC%EC%86%8C.py)
-  [경쟁적전염](https://github.com/cheonjiwan/Algorithm/blob/master/DFS_BFS/%EA%B2%BD%EC%9F%81%EC%A0%81%EC%A0%84%EC%97%BC.py)
-  [괄호 변환](https://github.com/cheonjiwan/Algorithm/blob/master/DFS_BFS/%EA%B4%84%ED%98%B8%EB%B3%80%ED%99%98.py)
+
+[특정 거리의 도시 찾기](https://github.com/cheonjiwan/Algorithm/blob/master/DFS_BFS/%ED%8A%B9%EC%A0%95%EA%B1%B0%EB%A6%AC%EC%9D%98%EB%8F%84%EC%8B%9C%EC%B0%BE%EA%B8%B0.py)
+[연구소](https://github.com/cheonjiwan/Algorithm/blob/master/DFS_BFS/%EC%97%B0%EA%B5%AC%EC%86%8C.py)
+[경쟁적전염](https://github.com/cheonjiwan/Algorithm/blob/master/DFS_BFS/%EA%B2%BD%EC%9F%81%EC%A0%81%EC%A0%84%EC%97%BC.py)
+[괄호 변환](https://github.com/cheonjiwan/Algorithm/blob/master/DFS_BFS/%EA%B4%84%ED%98%B8%EB%B3%80%ED%99%98.py)
 
 ### \* 정렬
 
