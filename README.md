@@ -36,7 +36,7 @@
 > BFS
 
 - 너비 우선 탐색 알고리즘
-- 선입선출 방식의 큐를 이용하면 효과적으로 구현<br><br>
+- 선입선출 방식의 큐를 이용하면 효과적으로 구현<br>
 
 [특정 거리의 도시 찾기](https://github.com/cheonjiwan/Algorithm/blob/master/DFS_BFS/%ED%8A%B9%EC%A0%95%EA%B1%B0%EB%A6%AC%EC%9D%98%EB%8F%84%EC%8B%9C%EC%B0%BE%EA%B8%B0.py)
 [연구소](https://github.com/cheonjiwan/Algorithm/blob/master/DFS_BFS/%EC%97%B0%EA%B5%AC%EC%86%8C.py)
@@ -55,6 +55,7 @@
 - 한 번 해결된 부분 문제의 정답을 메모리에 기록하여, 한 번 계싼한 답은 다시 계산하지 않도록 하는 문제 해결 기법
 - Topdown : 재귀 함수를 이용하여 큰 문제를 해결하기 위해 작은 문제 호출하는 방식
 - Bottomup : 단순히 반복문을 이용하여 작은 문제를 먼저 해결, 이를 통해 큰 문제를 해결<br>
+
 [정수 삼각형](https://github.com/cheonjiwan/Algorithm/blob/master/DP/%EC%A0%95%EC%88%98%EC%82%BC%EA%B0%81%ED%98%95.py)
 ### \* 최단경로
 
