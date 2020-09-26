@@ -42,13 +42,20 @@
 [연구소](https://github.com/cheonjiwan/Algorithm/blob/master/DFS_BFS/%EC%97%B0%EA%B5%AC%EC%86%8C.py)
 [경쟁적전염](https://github.com/cheonjiwan/Algorithm/blob/master/DFS_BFS/%EA%B2%BD%EC%9F%81%EC%A0%81%EC%A0%84%EC%97%BC.py)
 [괄호 변환](https://github.com/cheonjiwan/Algorithm/blob/master/DFS_BFS/%EA%B4%84%ED%98%B8%EB%B3%80%ED%99%98.py)
+[연산자 끼워 넣기](https://github.com/cheonjiwan/Algorithm/blob/master/DFS_BFS/%EC%97%B0%EC%82%B0%EC%9E%90%EB%81%BC%EC%9B%8C%EB%84%A3%EA%B8%B0.py)
+[감시 피하기]()
+[인구 이동](https://github.com/cheonjiwan/Algorithm/blob/master/DFS_BFS/%EC%9D%B8%EA%B5%AC%EC%9D%B4%EB%8F%99.py)
+[블록 이동하기]()
 
 ### \* 정렬
 
 ### \* 이진탐색
 
 ### \* DP
-
+- 한 번 해결된 부분 문제의 정답을 메모리에 기록하여, 한 번 계싼한 답은 다시 계산하지 않도록 하는 문제 해결 기법
+- Topdown : 재귀 함수를 이용하여 큰 문제를 해결하기 위해 작은 문제 호출하는 방식
+- Bottomup : 단순히 반복문을 이용하여 작은 문제를 먼저 해결, 이를 통해 큰 문제를 해결<br>
+[정수 삼각형](https://github.com/cheonjiwan/Algorithm/blob/master/DP/%EC%A0%95%EC%88%98%EC%82%BC%EA%B0%81%ED%98%95.py)
 ### \* 최단경로
 
 ### \* 그래프
