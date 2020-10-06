@@ -22,3 +22,6 @@ def rotate_a_matrix_by_90_degree(a):
         for j in range(m):
             result[j][n - i - 1] = a[i][j]
     return result
+
+# 2차원 배열 선언
+arr = eval(("[[0]*5]+"*10)[:-1])
