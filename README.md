@@ -68,7 +68,8 @@
 
   [국영수](https://github.com/cheonjiwan/Algorithm/blob/master/%EC%A0%95%EB%A0%AC/%EA%B5%AD%EC%98%81%EC%88%98.py)
   [안테나](https://github.com/cheonjiwan/Algorithm/blob/master/%EC%A0%95%EB%A0%AC/%EC%95%88%ED%85%8C%EB%82%98.py)
-
+  [실패율](https://github.com/cheonjiwan/Algorithm/blob/master/%EC%A0%95%EB%A0%AC/%EC%8B%A4%ED%8C%A8%EC%9C%A8.py)
+  [카드 정렬하기](https://github.com/cheonjiwan/Algorithm/blob/master/%EC%A0%95%EB%A0%AC/%EC%B9%B4%EB%93%9C%EC%A0%95%EB%A0%AC%ED%95%98%EA%B8%B0.py)
 ### \* 이진탐색
 
 ### \* DP
