@@ -30,8 +30,6 @@ arr = eval(("[[0]*5]+" * 10)[:-1])
 
 # 이진탐색, 주어진 숫자 개수 찾기
 from bisect import bisect_left, bisect_right
-
-
 def count_by_range(a, left, right):
     right_index = bisect_right(a, right)
     left_index = bisect_left(a, left)
