@@ -64,13 +64,19 @@
   |삽입 정렬|데이터를 앞에서부터 하나씩 확인하며 데이터를 적절한 위치에 '삽입'하는 방법|
   |퀵 정렬|기준 데이터를 설정하고 그 기준보다 큰 데이터와 작은 데이터의 위치를 바꾸는 방법|
   |계수 정렬|특정한 값을 가지는 데이터의 개수를 '카운트'하는 방법|
-  <br>
 
   [국영수](https://github.com/cheonjiwan/Algorithm/blob/master/%EC%A0%95%EB%A0%AC/%EA%B5%AD%EC%98%81%EC%88%98.py)
   [안테나](https://github.com/cheonjiwan/Algorithm/blob/master/%EC%A0%95%EB%A0%AC/%EC%95%88%ED%85%8C%EB%82%98.py)
   [실패율](https://github.com/cheonjiwan/Algorithm/blob/master/%EC%A0%95%EB%A0%AC/%EC%8B%A4%ED%8C%A8%EC%9C%A8.py)
   [카드 정렬하기](https://github.com/cheonjiwan/Algorithm/blob/master/%EC%A0%95%EB%A0%AC/%EC%B9%B4%EB%93%9C%EC%A0%95%EB%A0%AC%ED%95%98%EA%B8%B0.py)
+
 ### \* 이진탐색
+
+- 탐색 범위를 반으로 줄여나가면서 데이터를 빠르게 탐색하는 탐색 기법.
+- 내부 데이터가 정렬되어 있을 때만 사용할 수 있음.
+- 3가지 변수 사용(시작점,끝점,중간점)<br>
+
+[정렬된 배열에서 특정 수의 개수 구하기](https://github.com/cheonjiwan/Algorithm/blob/master/%EC%9D%B4%EC%A7%84%ED%83%90%EC%83%89/%EC%A0%95%EB%A0%AC%EB%90%9C%EB%B0%B0%EC%97%B4%EC%97%90%EC%84%9C%ED%8A%B9%EC%A0%95%EC%88%98%EC%9D%98%EA%B0%9C%EC%88%98%EA%B5%AC%ED%95%98%EA%B8%B0.py)
 
 ### \* DP
 
