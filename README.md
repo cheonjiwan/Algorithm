@@ -77,6 +77,7 @@
 - 3가지 변수 사용(시작점,끝점,중간점)<br>
 
 [정렬된 배열에서 특정 수의 개수 구하기](https://github.com/cheonjiwan/Algorithm/blob/master/%EC%9D%B4%EC%A7%84%ED%83%90%EC%83%89/%EC%A0%95%EB%A0%AC%EB%90%9C%EB%B0%B0%EC%97%B4%EC%97%90%EC%84%9C%ED%8A%B9%EC%A0%95%EC%88%98%EC%9D%98%EA%B0%9C%EC%88%98%EA%B5%AC%ED%95%98%EA%B8%B0.py)
+[가사 검색](https://github.com/cheonjiwan/Algorithm/blob/master/%EC%9D%B4%EC%A7%84%ED%83%90%EC%83%89/%EA%B0%80%EC%82%AC%EA%B2%80%EC%83%89.py)
 
 ### \* DP
 
