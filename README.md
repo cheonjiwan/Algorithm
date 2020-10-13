@@ -25,6 +25,8 @@
   [기둥과 보 설치](https://github.com/cheonjiwan/Algorithm/blob/master/%EA%B5%AC%ED%98%84/%EA%B8%B0%EB%91%A5%EA%B3%BC%EB%B3%B4%EC%84%A4%EC%B9%98.py)
   [치킨배달](https://github.com/cheonjiwan/Algorithm/blob/master/%EA%B5%AC%ED%98%84/%EC%B9%98%ED%82%A8%EB%B0%B0%EB%8B%AC.py)
   [외벽 점검](https://github.com/cheonjiwan/Algorithm/blob/master/%EA%B5%AC%ED%98%84/%EC%99%B8%EB%B2%BD%EC%A0%90%EA%B2%80.py)
+  [청소년 상어](https://github.com/cheonjiwan/Algorithm/blob/master/%EA%B5%AC%ED%98%84/%EC%B2%AD%EC%86%8C%EB%85%84%EC%83%81%EC%96%B4.py)
+  [로봇 청소기](https://github.com/cheonjiwan/Algorithm/blob/master/%EA%B5%AC%ED%98%84/%EB%A1%9C%EB%B4%87%EC%B2%AD%EC%86%8C%EA%B8%B0.py)
 
 ### \* DFS,BFS
 
