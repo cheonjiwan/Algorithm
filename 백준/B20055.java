@@ -58,7 +58,7 @@ public class Main {
 		Deque<Robot> robots = new ArrayDeque<>();
 		
 		while(true) {
-			// º§Æ® È¸Àü
+			// ï¿½ï¿½Æ® È¸ï¿½ï¿½
 			
 			step+=1;
 			Temp tmp = belt.remove(belt.size()-1);
@@ -75,7 +75,7 @@ public class Main {
 				}
 			}
 			
-			// ·Îº¿ ÀÌµ¿
+			// ï¿½Îºï¿½ ï¿½Ìµï¿½
 			
 			len = robots.size();
 			for(int i=0; i<len; i++) {
@@ -100,7 +100,7 @@ public class Main {
 				
 			}
 			
-			// ·Îº¿ ¿Ã¸®±â
+			// ï¿½Îºï¿½ ï¿½Ã¸ï¿½ï¿½ï¿½
 			Temp first = belt.get(0);
 			if(!first.isExist && first.naegudo>0) {
 				first.isExist=true;
@@ -109,7 +109,7 @@ public class Main {
 			}
 			
 			
-			// ³»±¸µµ È®ÀÎ
+			// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ È®ï¿½ï¿½
 			for(int i=0; i<belt.size(); i++) {
 				if(belt.get(i).naegudo==0)
 					count+=1;
