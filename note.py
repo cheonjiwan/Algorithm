@@ -48,3 +48,6 @@ def union_parent(parent, a, b):
         parent[b] = a
     else:
         parent[a] = b
+
+# 리스트 뒤에 붙이기
+M=[0]+list(map(int,input().split()))
