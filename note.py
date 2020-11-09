@@ -30,16 +30,20 @@ arr = eval(("[[0]*5]+" * 10)[:-1])
 
 # 이진탐색, 주어진 숫자 개수 찾기
 from bisect import bisect_left, bisect_right
+
+
 def count_by_range(a, left, right):
     right_index = bisect_right(a, right)
     left_index = bisect_left(a, left)
 
     return right_index - left_index
-    
+
+
 def find_parent(parent, x):
     if parent[x] != x:
         parent[x] = find_parent(parent, parent[x])
     return parent[x]
+
 
 def union_parent(parent, a, b):
     a = find_parent(parent, a)
@@ -49,15 +53,18 @@ def union_parent(parent, a, b):
     else:
         parent[a] = b
 
+
 # 리스트 뒤에 붙이기
-M=[0]+list(map(int,input().split()))
+M = [0] + list(map(int, input().split()))
 
 # 오름차순 정렬 출력
 print(*sorted(arr))
 
 # 파이썬 zip
-name = ['a', 'b'] 
-value = [1, 2] 
-for n, v in zip(name, value): 
+name = ["a", "b"]
+value = [1, 2]
+for n, v in zip(name, value):
     print(n, v)
 
+# in-line for문
+print(" ".join(str(i) for i in result))
