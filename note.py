@@ -54,3 +54,10 @@ M=[0]+list(map(int,input().split()))
 
 # 오름차순 정렬 출력
 print(*sorted(arr))
+
+# 파이썬 zip
+name = ['a', 'b'] 
+value = [1, 2] 
+for n, v in zip(name, value): 
+    print(n, v)
+
