@@ -68,3 +68,7 @@ for n, v in zip(name, value):
 
 # in-line for문
 print(" ".join(str(i) for i in result))
+
+# 람다식 입력
+input = __import__('sys').stdin.readline
+MIS = lambda: map(int,input().split())
