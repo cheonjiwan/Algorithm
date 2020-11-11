@@ -2,6 +2,7 @@ MIS=lambda:map(int,input().split())
 n,m=MIS();t=list(MIS())
 l=1;r=10**20
 max_m,max_s=0,0
+
 while l <= r:
     mid=(l+r)//2
     s=sum((mid-1)//x+1 for x in t)
