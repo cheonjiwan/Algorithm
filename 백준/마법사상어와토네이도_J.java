@@ -79,8 +79,8 @@ public class Main {
 		int d = -1,dir = 0;
 		
 		while(alpha<n) {
-			for(int i=0; i<alpha; i++) { // Çà
-				nx = x ; ny = y; // ¿Å±â±âÀü À§Ä¡
+			for(int i=0; i<alpha; i++) { // ï¿½ï¿½
+				nx = x ; ny = y; // ï¿½Å±ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ä¡
 				y = y+d;
 				cost = board[x][y];
 				board[x][y] = 0;
@@ -88,7 +88,7 @@ public class Main {
 			}
 			d *=-1;
 			dir = (dir+1)%4;
-			for(int i=0; i<alpha; i++) { // ¿­
+			for(int i=0; i<alpha; i++) { // ï¿½ï¿½
 				nx = x; ny = y; 
 				x = x+d;
 				cost = board[x][y];
