@@ -72,3 +72,7 @@ print(" ".join(str(i) for i in result))
 # 람다식 입력
 input = __import__('sys').stdin.readline
 MIS = lambda: map(int,input().split())
+
+# 원소들의 갯수
+import collections
+collections.Counter('내가 알고 싶어하는 리스트')
