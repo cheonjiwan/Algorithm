@@ -11,7 +11,3 @@ def solution(participant, completion):
     for who in participant:
         if mydic[who]!=0:
             return who
-
-participant=['mislav', 'stanko','mislav', 'ana']
-completion=['stanko', 'ana', 'mislav']
-print(solution(participant,completion))
