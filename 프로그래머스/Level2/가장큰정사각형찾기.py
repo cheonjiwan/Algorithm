@@ -7,6 +7,3 @@ def solution(board):
                 dp[i][j]=min(dp[i-1][j],dp[i][j-1],dp[i-1][j-1])+1
             result=max(result,dp[i][j])
     return result**2
-
-board=[[1,0,0],[0,0,0]]
-print(solution(board))
