@@ -51,6 +51,7 @@ for i in range(n):
             bridges.remove((i,j))
 
 result=2e10
+bfs()
 for i in range(len(bridges)):
     x,y=bridges[i]
     board[x][y]=m
