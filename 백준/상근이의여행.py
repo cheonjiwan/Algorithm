@@ -25,7 +25,4 @@ for _ in range(t):
     for _ in range(m):
         a,b=MIS()
         graph[a].append(b);graph[b].append(a)
-    result=0
-    for i in range(1,n+1):
-        result+=bfs(i,graph)
-    print(result)
+    print(bfs(1,graph))
