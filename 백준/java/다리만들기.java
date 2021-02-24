@@ -61,8 +61,8 @@ public class Main {
 		StringTokenizer st;
 		
 		n = Integer.parseInt(br.readLine());
-		groups = new ArrayList[n];
-		for(int i=0; i<n; i++) {
+		groups = new ArrayList[10001];
+		for(int i=0; i<10001; i++) {
 			groups[i] = new ArrayList<>();
 		}
 		
