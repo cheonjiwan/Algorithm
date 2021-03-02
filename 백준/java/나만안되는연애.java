@@ -6,18 +6,14 @@ public class Main {
 	static int n,m;
 	static String[] sex;
 	static int[] parent;
-	static class Edge implements Comparable<Edge>{
+	static class Edge{
 		int u,v,d;
 		Edge(int u,int v,int d){
 			this.u=u;
 			this.v=v;
 			this.d=d;
 		}
-		@Override
-		public int compareTo(Main.Edge o) {
-			// TODO Auto-generated method stub
-			return this.d-o.d;
-		}
+		
 	}
 	public static int find_parent(int x) {
 		if(x!=parent[x]){
