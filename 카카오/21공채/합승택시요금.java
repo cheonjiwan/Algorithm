@@ -2,8 +2,7 @@ import java.util.*;
 
 class Solution {
 	
-	static ArrayList<Node>[] graph;
-    public int solution(int n, int s, int a, int b, int[][] fares) {
+	public int solution(int n, int s, int a, int b, int[][] fares) {
         int answer = Integer.MAX_VALUE;
         int[][] distance = new int[n+1][n+1];
         for(int i=1; i<=n; i++) {
@@ -34,14 +33,6 @@ class Solution {
         	answer = Math.min(answer, distance[s][i]+distance[i][a]+distance[i][b]);
         }
         return answer;
-    }
-    
-    static class Node{
-    	int b,cost;
-    	Node(int b, int cost){
-    		this.b=b;
-    		this.cost=cost;
-    	}
     }
 }
 
